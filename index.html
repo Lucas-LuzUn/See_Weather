@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <title>See Weather</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <form id="search" class="show">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" placeholder="Digite seu local:" id="search_city" name="search_city">
+            <button id="search" type="submit"><i class="fa-solid fa-magnifying-glass"  onclick="pesquisar()"></i></button>
+        </form>
+
+        <div id="info">
+            <h1 id="title"></h1>
+
+            <div id="info_clima">
+                <img src="" id="imagem">
+                
+                <div id="temp">
+                    <p id="temp_value"></p>
+                    <p id="temp_description"></p>
+                </div>
+
+            </div>
+
+            <div id="second_info">
+                
+                <div class="infos">
+                    <i class="fa-solid fa-temperature-high" id="quente"></i>
+
+                    <div>
+                        <h3>Temp Max:</h3>
+                        <p id="max_temp"></p>
+                    </div>
+
+                </div>
+
+                <div class="infos">
+                    <i class="fa-solid fa-temperature-low" id="frio"></i>
+
+                    <div>
+                        <h3>Temp Min:</h3>
+                        <p id="min_temp"></p>
+                    </div>
+
+                </div>
+
+                <div class="infos">
+                    <i class="fa-solid fa-water" id="humidade"></i>
+
+                    <div>
+                        <h3>Humidade:</h3>
+                        <p id="humidity"></p>
+                    </div>
+
+                </div>
+
+                <div class="infos">
+                    <i class="fa-solid fa-wind" id="vento"></i>
+                    
+                    <div>
+                        <h3>Vento:</h3>
+                        <p id="wind"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="alert"></div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
